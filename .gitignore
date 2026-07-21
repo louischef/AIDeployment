@@ -216,3 +216,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- osint-ner project data (see README for how to populate) ---
+data/raw/*
+data/interim/*
+data/annotations/*
+data/processed/*
+!data/**/.gitkeep
+
+# spaCy binary datasets and training artifacts
+*.spacy
+/output/
+model-best/
+model-last/
+
+# review logs may contain excerpts of the (sensitive-ish) source corpus
+review_log.json
+

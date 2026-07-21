@@ -1,0 +1,55 @@
+# MIL_UNIT gazetteer -- combat units (slide 15).
+# One term per line, matched case-insensitively (exact text, not lemma -- see
+# annotate.py docstring for why plurals are spelled out rather than inferred).
+# Numbered units such as "58th Army" or "3rd Motor Rifle Brigade" are handled
+# separately by a regex pattern in annotate.py (ordinal number + one of the
+# single-word nouns below), not listed here.
+
+army
+armies
+brigade
+brigades
+motor rifle brigade
+motor rifle brigades
+tank brigade
+tank brigades
+mechanized brigade
+mechanized brigades
+guards brigade
+guards brigades
+airborne assault brigade
+airborne assault brigades
+battalion
+battalions
+battalion tactical group
+battalion tactical groups
+regiment
+regiments
+division
+divisions
+motor rifle division
+motor rifle divisions
+airborne division
+airborne divisions
+tank division
+tank divisions
+company
+companies
+platoon
+platoons
+corps
+army corps
+combined arms army
+combined arms armies
+task force
+task forces
+squadron
+squadrons
+marine brigade
+marine brigades
+special forces detachment
+special forces detachments
+spetsnaz unit
+spetsnaz units
+reconnaissance company
+reconnaissance companies

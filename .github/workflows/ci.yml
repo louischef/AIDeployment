@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install package + dev dependencies
+        run: python -m pip install -e ".[dev]"
+
+      - name: Download spaCy base model (en_core_web_sm)
+        run: python -m spacy download en_core_web_sm
+
+      - name: Lint (ruff check)
+        run: python -m ruff check .
+
+      - name: Format check (ruff format)
+        run: python -m ruff format --check .
+
+      - name: Run test suite (fast tests only)
+        run: python -m pytest

@@ -1,0 +1,115 @@
+# WEAPON gazetteer -- systems and materiel (slide 15).
+# One term per line, matched case-insensitively on token text. Lines starting
+# with # are comments. Extend this list as human review (review.py) surfaces
+# misses in the real corpus -- consistency matters more than exhaustiveness.
+
+# Generic terms -- both singular and plural are listed explicitly (matching is
+# exact-text, case-insensitive, not lemma-based -- see annotate.py docstring
+# for why: lemmatizing short out-of-context phrases is unreliable for proper
+# nouns, so plurals are spelled out here instead of inferred).
+missile
+missiles
+cruise missile
+cruise missiles
+ballistic missile
+ballistic missiles
+tank
+tanks
+howitzer
+howitzers
+self-propelled howitzer
+self-propelled howitzers
+artillery
+mortar
+mortars
+rocket launcher
+rocket launchers
+multiple rocket launcher
+multiple rocket launchers
+drone
+drones
+UAV
+UAVs
+fighter jet
+fighter jets
+attack helicopter
+attack helicopters
+helicopter
+helicopters
+warship
+warships
+frigate
+frigates
+submarine
+submarines
+aircraft carrier
+aircraft carriers
+carrier strike group
+carrier strike groups
+armored personnel carrier
+armored personnel carriers
+infantry fighting vehicle
+infantry fighting vehicles
+anti-tank guided missile
+anti-tank guided missiles
+man-portable air-defense system
+man-portable air-defense systems
+
+# Russian-designated systems
+Kalibr
+Iskander
+Kinzhal
+Zircon
+Kh-101
+Kh-22
+Kh-59
+S-300
+S-400
+Pantsir
+Tor
+Buk
+Grad
+Uragan
+Smerch
+Tornado-S
+Tornado-G
+Msta-S
+T-72
+T-80
+T-90
+T-14 Armata
+BMP-1
+BMP-2
+BMP-3
+BTR-80
+BTR-82
+AK-12
+AK-74
+RPG-7
+Lancet
+Shahed
+Geran-2
+Orlan-10
+Su-25
+Su-34
+Su-35
+MiG-29
+Ka-52
+Mi-8
+Mi-24
+
+# Western-designated systems
+HIMARS
+M142 HIMARS
+Javelin
+NLAW
+Stinger
+Bradley
+M2 Bradley
+Abrams
+M1 Abrams
+Leopard 2
+Challenger 2
+Switchblade
+Bayraktar TB2
+F-16

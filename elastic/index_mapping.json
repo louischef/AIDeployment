@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "url": { "type": "keyword" },
+      "title": { "type": "text" },
+      "date": { "type": "date" },
+      "date_raw": { "type": "keyword" },
+      "text": { "type": "text" },
+      "weapons": { "type": "keyword" },
+      "mil_units": { "type": "keyword" },
+      "mil_orgs": { "type": "keyword" },
+      "source_name": { "type": "keyword" },
+      "source_bias": { "type": "text" }
+    }
+  }
+}

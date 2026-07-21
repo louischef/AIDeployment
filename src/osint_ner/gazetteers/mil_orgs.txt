@@ -1,0 +1,35 @@
+# MIL_ORG gazetteer -- high-level military organisations (slide 15).
+# Used both as EntityRuler patterns AND as the keyword cue list that filters
+# en_core_web_sm's generic ORG entities down to military ones (see
+# annotate.py:_looks_military). One term/phrase per line.
+
+General Staff
+Ministry of Defence
+Ministry of Defense
+Department of Defense
+Armed Forces
+Joint Staff
+Southern Military District
+Western Military District
+Eastern Military District
+Central Military District
+National Guard
+Rosgvardia
+NATO
+Pentagon
+General Command
+Supreme Command
+Airborne Forces Command
+Naval Command
+Air Force Command
+Security Council
+Defence Ministry
+Defense Ministry
+Navy
+Military-Industrial Commission
+Pacific Fleet
+Northern Fleet
+Black Sea Fleet
+Baltic Fleet
+Caspian Flotilla
+Fleet
